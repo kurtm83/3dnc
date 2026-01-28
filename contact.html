@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact 3DNC for 3D printing and scanning services. Get a quote for your project today.">
+    <title>Contact - 3DNC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>3DNC</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Ready to start your 3D printing or scanning project? We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <!-- Formspree Form - Replace YOUR_FORM_ID with your actual Formspree form ID -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="3d-printing">3D Printing</option>
+                                <option value="3d-scanning">3D Scanning</option>
+                                <option value="both">Both Printing & Scanning</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project">Project Description *</label>
+                            <textarea id="project" name="project" rows="6" required placeholder="Tell us about your project, including any files you have, timeline, and budget..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Desired Timeline</label>
+                            <input type="text" id="timeline" name="timeline" placeholder="e.g., 2 weeks, ASAP, flexible">
+                        </div>
+
+                        <!-- Hidden field for form name -->
+                        <input type="hidden" name="_subject" value="New 3DNC Project Inquiry">
+                        
+                        <!-- Formspree redirect after submission (optional) -->
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Other Ways to Reach Us</h2>
+                    
+                    <div class="contact-info-card">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:info@3dnc.com">info@3dnc.com</a></p>
+                        <p class="info-note">We typically respond within 24 hours</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>⏰ Response Time</h3>
+                        <p>We aim to respond to all inquiries within one business day. Rush projects may be available - please mention urgency in your message.</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>📋 What to Include</h3>
+                        <ul>
+                            <li>Project description and goals</li>
+                            <li>Any CAD files or reference images</li>
+                            <li>Desired materials and finish</li>
+                            <li>Quantity needed</li>
+                            <li>Timeline and budget</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>💰 Getting a Quote</h3>
+                        <p>Pricing depends on project complexity, materials, size, and quantity. We provide detailed quotes after reviewing your requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do I need a 3D file?</h3>
+                    <p>Not necessarily! If you have a physical object, we can 3D scan it. If you have an idea, we can help with design consultation or refer you to designers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What file formats do you accept?</h3>
+                    <p>We work with STL, OBJ, 3MF, and other common 3D file formats. Not sure? Send us what you have and we'll let you know.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does printing take?</h3>
+                    <p>It varies by project size and complexity. Small items may take a few hours, while larger or detailed prints can take 24+ hours. We'll provide timeline estimates with your quote.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are your size limits?</h3>
+                    <p>Our print bed accommodates objects up to [specify dimensions]. For larger projects, we can print in sections and assemble.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can you ship prints?</h3>
+                    <p>Yes! We can carefully package and ship your completed prints. Shipping costs will be added to your quote.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer design services?</h3>
+                    <p>We focus on printing and scanning. For design work, we can recommend trusted CAD designers who work with our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>3DNC</h3>
+                    <p>Professional 3D printing and scanning services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Questions? Reach out to discuss your project.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 3DNC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
