@@ -210,7 +210,7 @@ p {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 600px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,6 +250,36 @@ p {
     color: white;
     max-width: 800px;
     padding: 0 20px;
+}
+
+.hero-logo {
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.7));
+    transform-origin: center bottom;
+    animation: logoGrow 35s ease-in-out infinite alternate;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+@keyframes logoGrow {
+    0% {
+        transform: scale(0.25);
+    }
+    100% {
+        transform: scale(0.5);
+    }
 }
 
 .hero-content h2 {
