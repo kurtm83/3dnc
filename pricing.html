@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3DNC Pricing Guide - 3D Printing and Scanning Services">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Pricing Guide - 3DNC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pricing-table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: var(--shadow-lg);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .pricing-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        .pricing-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+        .pricing-table tr:hover {
+            background: var(--bg-light);
+        }
+        .price-highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .pricing-note {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        .pricing-section {
+            margin: 3rem 0;
+        }
+        .pricing-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .example-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+        .example-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .example-price {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        .factor-list {
+            list-style: none;
+            padding: 0;
+        }
+        .factor-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .factor-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html"><img src="images/3DNC LOGO ISO LINES.svg" alt="3DNC Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Pricing Guide</h1>
+            <p>Transparent pricing for 3D printing, scanning, and design services</p>
+        </div>
+    </section>
+
+    <!-- Pricing Content -->
+    <section class="pricing-section" style="padding: 3rem 0;">
+        <div class="container">
+            
+            <div class="pricing-note">
+                <h3>💡 How Pricing Works</h3>
+                <p>Project costs are calculated based on several factors including print time, material usage, complexity, quantity, and any additional services like design or finishing. Below are our standard rates to give you a clear starting point.</p>
+            </div>
+
+            <!-- 3D Printing Base Rates -->
+            <div class="pricing-section">
+                <h2>3D Printing Rates</h2>
+                <p class="section-subtitle">Base pricing by material and print time</p>
+                
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Base Rate</th>
+                            <th>Per Hour</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>PLA</strong></td>
+                            <td class="price-highlight">$5 setup</td>
+                            <td class="price-highlight">$3/hour</td>
+                            <td>Standard material, great for most applications, eco-friendly</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PETG</strong></td>
+                            <td class="price-highlight">$5 setup</td>
+                            <td class="price-highlight">$4/hour</td>
+                            <td>Strong, flexible, weather-resistant, food-safe option</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ABS</strong></td>
+                            <td class="price-highlight">$5 setup</td>
+                            <td class="price-highlight">$4/hour</td>
+                            <td>Durable, heat-resistant, ideal for functional parts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TPU (Flexible)</strong></td>
+                            <td class="price-highlight">$10 setup</td>
+                            <td class="price-highlight">$6/hour</td>
+                            <td>Rubber-like flexibility, requires specialized settings</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pricing-note">
+                    <p><strong>Minimum order:</strong> $15 per print job</p>
+                    <p><strong>Quantity discounts:</strong> 5+ identical parts: 10% off | 10+ parts: 15% off | 25+ parts: 20% off</p>
+                </div>
+            </div>
+
+            <!-- Example Projects -->
+            <div class="pricing-section">
+                <h2>Example Print Projects</h2>
+                <p class="section-subtitle">Real-world pricing examples to help estimate your project</p>
+                
+                <div class="pricing-examples">
+                    <div class="example-card">
+                        <h4>Small Simple Part</h4>
+                        <p>Phone stand, keychain, simple bracket</p>
+                        <ul class="factor-list">
+                            <li>Print time: 2-4 hours</li>
+                            <li>Material: PLA</li>
+                            <li>Complexity: Low</li>
+                        </ul>
+                        <div class="example-price">$15 - $20</div>
+                    </div>
+
+                    <div class="example-card">
+                        <h4>Medium Functional Part</h4>
+                        <p>Drawer pull replacement, custom mount, enclosure</p>
+                        <ul class="factor-list">
+                            <li>Print time: 5-8 hours</li>
+                            <li>Material: PETG or ABS</li>
+                            <li>Complexity: Medium</li>
+                        </ul>
+                        <div class="example-price">$30 - $45</div>
+                    </div>
+
+                    <div class="example-card">
+                        <h4>Large Complex Part</h4>
+                        <p>Prototype housing, detailed figurine, mechanical assembly</p>
+                        <ul class="factor-list">
+                            <li>Print time: 12-20 hours</li>
+                            <li>Material: Any</li>
+                            <li>Complexity: High</li>
+                        </ul>
+                        <div class="example-price">$60 - $100+</div>
+                    </div>
+
+                    <div class="example-card">
+                        <h4>Multi-Part Assembly</h4>
+                        <p>Multiple components that fit together</p>
+                        <ul class="factor-list">
+                            <li>Print time: 15-30 hours total</li>
+                            <li>Material: Various</li>
+                            <li>Test fit & assembly included</li>
+                        </ul>
+                        <div class="example-price">$75 - $150+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Services -->
+            <div class="pricing-section">
+                <h2>Design Services</h2>
+                <p class="section-subtitle">Professional surface modeling with 12+ years experience</p>
+                
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Rate</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Simple Modifications</strong></td>
+                            <td class="price-highlight">$25 - $50</td>
+                            <td>Scale adjustments, basic edits, hole additions</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom Design (Simple)</strong></td>
+                            <td class="price-highlight">$75 - $150</td>
+                            <td>Basic custom parts, brackets, simple geometry</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom Design (Complex)</strong></td>
+                            <td class="price-highlight">$150 - $400</td>
+                            <td>Detailed parts, assemblies, organic shapes, technical modeling</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reverse Engineering</strong></td>
+                            <td class="price-highlight">$100 - $300</td>
+                            <td>Create CAD model from scanned object or measurements</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hourly Consulting</strong></td>
+                            <td class="price-highlight">$60/hour</td>
+                            <td>Design consultation, file optimization, technical advice</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pricing-note">
+                    <p><strong>Design + Print bundle:</strong> 10% discount when ordering both design and printing together</p>
+                    <p><strong>File formats delivered:</strong> Source files (3DM, SKP, or STP) plus print-ready STL/3MF</p>
+                </div>
+            </div>
+
+            <!-- 3D Scanning Services -->
+            <div class="pricing-section">
+                <h2>3D Scanning Services</h2>
+                <p class="section-subtitle">Precision scanning for reproduction and archiving</p>
+                
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Scan Type</th>
+                            <th>Price</th>
+                            <th>Deliverables</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Small Object</strong> (< 4 inches)</td>
+                            <td class="price-highlight">$40 - $75</td>
+                            <td>High-res mesh (STL/OBJ), basic cleanup</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Medium Object</strong> (4-8 inches)</td>
+                            <td class="price-highlight">$75 - $125</td>
+                            <td>High-res mesh, detailed cleanup, measurements</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Large Object</strong> (8-12 inches)</td>
+                            <td class="price-highlight">$125 - $200</td>
+                            <td>High-res mesh, full cleanup, documentation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Complex/Detailed Objects</strong></td>
+                            <td class="price-highlight">+$25 - $75</td>
+                            <td>Additional time for intricate details or difficult surfaces</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CAD Conversion</strong></td>
+                            <td class="price-highlight">+$75 - $250</td>
+                            <td>Convert mesh to parametric CAD model (quoted separately)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pricing-note">
+                    <p><strong>Scan + Print bundle:</strong> Get 15% off printing when ordering both scanning and printing of the same object</p>
+                    <p><strong>Multiple objects:</strong> Scanning 3+ similar objects gets 20% off each after the first</p>
+                </div>
+            </div>
+
+            <!-- Post-Processing -->
+            <div class="pricing-section">
+                <h2>Finishing & Post-Processing</h2>
+                <p class="section-subtitle">Enhance your prints with professional finishing</p>
+                
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Support Removal & Cleanup</strong></td>
+                            <td class="price-highlight">Included</td>
+                            <td>Standard cleanup included with all prints</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sanding (Light)</strong></td>
+                            <td class="price-highlight">$10 - $25</td>
+                            <td>Quick surface smoothing of visible areas</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sanding (Full)</strong></td>
+                            <td class="price-highlight">$25 - $75</td>
+                            <td>Comprehensive sanding for smooth finish</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Primer Coating</strong></td>
+                            <td class="price-highlight">$15 - $40</td>
+                            <td>Professional primer application, ready for painting</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paint (Single Color)</strong></td>
+                            <td class="price-highlight">$25 - $60</td>
+                            <td>Professional single-color finish</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Assembly</strong></td>
+                            <td class="price-highlight">$15 - $50</td>
+                            <td>Assembly of multi-part prints with adhesive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Rush Service -->
+            <div class="pricing-section">
+                <h2>Additional Services</h2>
+                
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Cost</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Rush Service (48hr)</strong></td>
+                            <td class="price-highlight">+50%</td>
+                            <td>Priority queue, 48-hour completion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rush Service (24hr)</strong></td>
+                            <td class="price-highlight">+100%</td>
+                            <td>Expedited processing, 24-hour completion</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shipping (Local)</strong></td>
+                            <td class="price-highlight">$8 - $15</td>
+                            <td>Standard shipping within region</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shipping (National)</strong></td>
+                            <td class="price-highlight">$15 - $40</td>
+                            <td>Varies by size and weight</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test Print</strong></td>
+                            <td class="price-highlight">$15 - $30</td>
+                            <td>Small test version before full-size print</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="pricing-note" style="text-align: center; border-left: none; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white;">
+                <h3>Ready to Get Started?</h3>
+                <p>Every project is unique. Contact us for a detailed quote based on your specific needs.</p>
+                <a href="contact.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">Request a Quote</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>3DNC</h4>
+                    <p>Professional 3D printing and scanning services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@3dnc.com">info@3dnc.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 3DNC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
