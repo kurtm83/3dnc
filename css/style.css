@@ -716,6 +716,40 @@ p {
     color: var(--text-light);
 }
 
+/* Thank You Section */
+.thank-you-section {
+    padding: 8rem 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-you-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thank-you-content h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.thank-you-message {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.thank-you-details {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+}
+
 /* FAQ Section */
 .faq-section {
     padding: 5rem 0;
@@ -875,6 +909,14 @@ footer {
     
     .hero-content p {
         font-size: 1.125rem;
+    }
+    
+    .thank-you-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .thank-you-message {
+        font-size: 1.25rem;
     }
     
     .service-detail-content,

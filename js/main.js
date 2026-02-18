@@ -91,3 +91,86 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// YouTube Video Metadata Loader
+// Add your YouTube API key here
+const YOUTUBE_API_KEY = 'AIzaSyDW_j3p_EgbFKevryeBZWrq69WD-a6yFBg';
+
+async function loadYouTubeMetadata() {
+    // Find all video cards with data-video-id attribute
+    const videoCards = document.querySelectorAll('[data-video-id]');
+    
+    if (videoCards.length === 0) return;
+    
+    // Check if API key is set
+    if (YOUTUBE_API_KEY === 'YOUR_YOUTUBE_API_KEY_HERE') {
+        console.warn('YouTube API key not set. Video titles and descriptions will not load automatically.');
+        // Set default fallback text
+        videoCards.forEach(card => {
+            const titleEl = card.querySelector('.video-title');
+            const descEl = card.querySelector('.video-description');
+            if (titleEl) titleEl.textContent = 'Project Video';
+            if (descEl) descEl.textContent = 'Watch this 3D printing project time lapse';
+        });
+        return;
+    }
+    
+    // Extract all video IDs
+    const videoIds = Array.from(videoCards).map(card => card.dataset.videoId);
+    
+    // Fetch metadata for all videos in one API call
+    try {
+        const response = await fetch(
+            `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoIds.join(',')}&key=${YOUTUBE_API_KEY}`
+        );
+        
+        if (!response.ok) {
+            throw new Error(`YouTube API error: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        // Update each video card with its metadata
+        data.items.forEach(video => {
+            const videoId = video.id;
+            const title = video.snippet.title;
+            const description = video.snippet.description;
+            
+            // Find the corresponding card
+            const card = document.querySelector(`[data-video-id="${videoId}"]`);
+            if (card) {
+                const titleEl = card.querySelector('.video-title');
+                const descEl = card.querySelector('.video-description');
+                
+                if (titleEl) {
+                    titleEl.textContent = title;
+                }
+                
+                if (descEl) {
+                    // Use first line or first 150 characters of description
+                    const shortDesc = description.split('\n')[0] || description;
+                    descEl.textContent = shortDesc.length > 150 
+                        ? shortDesc.substring(0, 150) + '...' 
+                        : shortDesc;
+                }
+            }
+        });
+        
+    } catch (error) {
+        console.error('Error loading YouTube metadata:', error);
+        // Set error fallback text
+        videoCards.forEach(card => {
+            const titleEl = card.querySelector('.video-title');
+            const descEl = card.querySelector('.video-description');
+            if (titleEl && titleEl.textContent === 'Loading...') {
+                titleEl.textContent = 'Project Video';
+            }
+            if (descEl && descEl.textContent === 'Loading video details...') {
+                descEl.textContent = 'Watch this 3D printing project';
+            }
+        });
+    }
+}
+
+// Load YouTube metadata when page loads
+document.addEventListener('DOMContentLoaded', loadYouTubeMetadata);

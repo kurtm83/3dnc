@@ -1,0 +1,10 @@
+# YouTube Video Links for Gallery
+# Add your YouTube video links here, one per line
+# The system will automatically fetch titles and descriptions
+
+https://youtu.be/tR23ThTc6WM
+https://youtu.be/KS9b1L6CTFg
+https://youtu.be/4UT1HEY-qXY
+https://youtu.be/4Y-x-DmvVns
+https://youtu.be/XLjJunm0Nt8
+https://youtu.be/EPgQzdHduNQ
