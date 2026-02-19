@@ -7,11 +7,11 @@ DATE=January 2026
 DESCRIPTION=Client needed to replace two missing metal drawer pulls to complete a matching set for their cabinet. Using precision 3D modeling and printing, we successfully reproduced the intricate design, creating perfect matches to the original metal hardware.
 
 # Project images (placed in images/ folder)
-IMAGE_1=drawer-pull-1.jpg
+IMAGE_1=drawer pull original.jpeg
 IMAGE_1_ALT=Metal drawer pull original
-IMAGE_2=drawer-pull-2.jpg
+IMAGE_2=drawer pull print.jpeg
 IMAGE_2_ALT=3D printed drawer pull reproduction
-IMAGE_3=drawer-pull-3.jpg
+IMAGE_3=drawer pull completed.jpeg
 IMAGE_3_ALT=Completed set of drawer pulls
 
 # Project specifications
