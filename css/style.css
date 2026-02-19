@@ -1039,3 +1039,219 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===================================
+   Portfolio Archive Styles
+   =================================== */
+
+.hero-small {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+.hero-small h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-small p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Portfolio Navigation Menu */
+.portfolio-nav {
+    background-color: var(--bg-light);
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.portfolio-menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-menu a {
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.portfolio-menu a:hover {
+    background-color: var(--bg-white);
+    color: var(--primary-color);
+}
+
+.portfolio-menu a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.portfolio-list {
+    padding: 4rem 0;
+}
+
+.portfolio-item {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.portfolio-item:last-child {
+    border-bottom: none;
+}
+
+.portfolio-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-item h3 a {
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.portfolio-item h3 a:hover {
+    color: var(--primary-color);
+}
+
+.portfolio-item .date {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Portfolio Content Pages */
+.portfolio-content {
+    padding: 3rem 0;
+    min-height: 60vh;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: var(--primary-dark);
+}
+
+.portfolio-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.portfolio-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.portfolio-header .date {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.portfolio-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.portfolio-body p {
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-body h2,
+.portfolio-body h3,
+.portfolio-body h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.portfolio-body img {
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.portfolio-body a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.portfolio-body a:hover {
+    color: var(--primary-dark);
+}
+
+/* WordPress Block Gallery Support */
+.wp-block-jetpack-tiled-gallery {
+    margin: 2rem 0;
+}
+
+.tiled-gallery__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tiled-gallery__row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tiled-gallery__col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tiled-gallery__item {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.tiled-gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* WordPress Columns */
+.wp-block-columns {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.wp-block-column {
+    flex: 1;
+}
+
+/* Responsive Portfolio */
+@media (max-width: 768px) {
+    .hero-small h1 {
+        font-size: 2rem;
+    }
+    
+    .portfolio-header h1 {
+        font-size: 2rem;
+    }
+    
+    .portfolio-body {
+        font-size: 1rem;
+    }
+    
+    .wp-block-columns {
+        flex-direction: column;
+    }
+}

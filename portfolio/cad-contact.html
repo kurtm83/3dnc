@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CAD Portfolio - 3D-NC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">3D-NC</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="index.html" class="active">CAD Portfolio</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-small">
+        <div class="container">
+            <h1>CAD Portfolio</h1>
+            <p>2D & 3D CADD Services - Set Design & Construction</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Navigation -->
+    <section class="portfolio-nav">
+        <div class="container">
+            <nav class="portfolio-menu">
+                <a href="index.html">About</a>
+                <a href="recent-projects.html">Past Projects</a>
+                <a href="animations.html">Animations</a>
+                <a href="cad-contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="portfolio-content">
+        <div class="container">
+            <article>
+                <header class="portfolio-header">
+                    <h2>Get in Touch</h2>
+                    <p>Please reach out with any questions. I'd love to discuss your CAD project and how I can be of service.</p>
+                </header>
+                <div class="portfolio-body">
+                    <form action="https://formspree.io/f/xaqdblee" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="3d-modeling">3D Modeling</option>
+                                <option value="drafting">Drafting & Technical Drawings</option>
+                                <option value="set-design">Set Design</option>
+                                <option value="cnc-layout">CNC Layout</option>
+                                <option value="rendering">Rendering</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project">Project Description *</label>
+                            <textarea id="project" name="project" rows="6" required placeholder="Tell us about your project, including timeline and any specific requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Desired Timeline</label>
+                            <input type="text" id="timeline" name="timeline" placeholder="e.g., 2 weeks, ASAP, flexible">
+                        </div>
+
+                        <!-- Hidden fields -->
+                        <input type="hidden" name="_subject" value="New CAD Portfolio Inquiry">
+                        <input type="hidden" name="_next" value="https://3d-nc.com/thank-you.html">
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 3D-NC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
