@@ -53,7 +53,6 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         // Formspree will handle the actual submission
         // This is just for any additional client-side logic you might want
-        console.log('Form submitted');
     });
 }
 
