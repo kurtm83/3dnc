@@ -207,6 +207,18 @@ p {
     transition: var(--transition);
 }
 
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -896,11 +908,40 @@ footer {
 /* Responsive Design */
 @media (max-width: 968px) {
     .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 250px;
+        background-color: var(--bg-white);
+        box-shadow: var(--shadow-lg);
+        border-radius: 8px 0 0 8px;
+        padding: 2rem 0;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid var(--bg-light);
+    }
+    
+    .nav-menu a::after {
         display: none;
     }
     
     .nav-toggle {
         display: flex;
+        z-index: 1001;
     }
     
     .hero-content h2 {
@@ -944,7 +985,21 @@ footer {
     }
     
     .hero {
-        height: 400px;
+        height: 500px;
+        min-height: 500px;
+    }
+    
+    .hero-logo img {
+        max-width: 250px;
+    }
+    
+    @keyframes logoGrow {
+        0% {
+            transform: scale(0.3);
+        }
+        100% {
+            transform: scale(0.4);
+        }
     }
     
     .hero-content h2 {
@@ -957,6 +1012,13 @@ footer {
     
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
     }
     
     .gallery-image-grid {

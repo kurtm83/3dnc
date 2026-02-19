@@ -75,7 +75,7 @@
                 <div class="service-detail-media">
                     <!-- YouTube video cycling through gallery videos -->
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/tR23ThTc6WM?autoplay=1&mute=1&loop=1&playlist=tR23ThTc6WM,KS9b1L6CTFg,4UT1HEY-qXY,4Y-x-DmvVns,XLjJunm0Nt8,EPgQzdHduNQ&rel=0&modestbranding=1" 
+                        <iframe id="services-video" src="https://www.youtube.com/embed/tR23ThTc6WM?autoplay=1&mute=1&loop=1&playlist=tR23ThTc6WM,KS9b1L6CTFg,4UT1HEY-qXY,4Y-x-DmvVns,XLjJunm0Nt8,EPgQzdHduNQ&rel=0&modestbranding=1" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
@@ -122,6 +122,46 @@
         </div>
     </footer>
 
+    <script>
+        // Shuffle playlist with localStorage caching
+        (function() {
+            const videoIds = ['tR23ThTc6WM', 'KS9b1L6CTFg', '4UT1HEY-qXY', '4Y-x-DmvVns', 'XLjJunm0Nt8', 'EPgQzdHduNQ'];
+            const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+            
+            function shuffleArray(array) {
+                const shuffled = [...array];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+                return shuffled;
+            }
+            
+            // Check if we have a cached playlist
+            const cachedPlaylist = localStorage.getItem('servicesPlaylist');
+            const cachedTimestamp = localStorage.getItem('servicesPlaylistTimestamp');
+            const now = Date.now();
+            
+            let playlist;
+            
+            // Use cached playlist if it exists and is not expired
+            if (cachedPlaylist && cachedTimestamp && (now - parseInt(cachedTimestamp)) < CACHE_DURATION) {
+                playlist = cachedPlaylist.split(',');
+            } else {
+                // Shuffle and cache new playlist
+                playlist = shuffleArray(videoIds);
+                localStorage.setItem('servicesPlaylist', playlist.join(','));
+                localStorage.setItem('servicesPlaylistTimestamp', now.toString());
+            }
+            
+            // Update iframe src with the playlist
+            const iframe = document.getElementById('services-video');
+            if (iframe) {
+                const playlistParam = playlist.join(',');
+                iframe.src = `https://www.youtube.com/embed/${playlist[0]}?autoplay=1&mute=1&loop=1&playlist=${playlistParam}&rel=0&modestbranding=1`;
+            }
+        })();
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>

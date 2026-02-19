@@ -1,0 +1,24 @@
+# Featured Project Configuration
+# Edit this file to update the "Recent Work" section on gallery.html
+
+VIDEO_ID=tR23ThTc6WM
+TITLE=Custom Drawer Pull Reproduction
+DATE=January 2026
+DESCRIPTION=Client needed to replace two missing metal drawer pulls to complete a matching set for their cabinet. Using precision 3D modeling and printing, we successfully reproduced the intricate design, creating perfect matches to the original metal hardware.
+
+# Project images (placed in images/ folder)
+IMAGE_1=drawer-pull-1.jpg
+IMAGE_1_ALT=Metal drawer pull original
+IMAGE_2=drawer-pull-2.jpg
+IMAGE_2_ALT=3D printed drawer pull reproduction
+IMAGE_3=drawer-pull-3.jpg
+IMAGE_3_ALT=Completed set of drawer pulls
+
+# Project specifications
+CHALLENGE=Match existing metal drawer pulls exactly
+SOLUTION=3D printed reproductions based on originals
+MATERIAL=PLA with bondo filler and metallic finish
+QUANTITY=Multiple units for complete set
+RESULT=Perfect match, client satisfaction
+
+HIGHLIGHT=Watch the time lapse video above to see the printing process from start to finish!
