@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "id": "example-product-1",
+      "name": "Example 3D Printed Part",
+      "description": "High-quality 3D printed component perfect for your needs. Made with durable materials.",
+      "price": 29.99,
+      "images": [
+        "images/store/example-product-1.jpg"
+      ],
+      "category": "Parts",
+      "material": "PLA",
+      "color": "Black",
+      "dimensions": "50mm x 50mm x 25mm",
+      "stlFile": "models/example-product-1.stl",
+      "fulfillmentProvider": "craftcloud",
+      "inStock": true,
+      "featured": true,
+      "createdAt": "2026-02-20"
+    }
+  ],
+  "categories": ["Parts", "Accessories", "Tools", "Custom"],
+  "fulfillmentProviders": {
+    "craftcloud": {
+      "name": "Craftcloud3D",
+      "url": "https://craftcloud3d.com/",
+      "apiKey": "",
+      "active": true
+    },
+    "shapeways": {
+      "name": "Shapeways",
+      "url": "https://www.shapeways.com/",
+      "apiKey": "",
+      "active": false
+    },
+    "slant3d": {
+      "name": "Slant3D",
+      "url": "https://www.slant3d.com/",
+      "apiKey": "",
+      "active": false
+    }
+  },
+  "settings": {
+    "storeName": "3D NC Store",
+    "adminPassword": "changeme123",
+    "stripeEnabled": false,
+    "stripePublicKey": "",
+    "paypalEnabled": true,
+    "paypalClientId": "YOUR_PAYPAL_CLIENT_ID",
+    "taxRate": 0.08,
+    "shippingFlat": 5.99,
+    "currency": "USD",
+    "notificationEmail": "orders@3dnc.com"
+  }
+}

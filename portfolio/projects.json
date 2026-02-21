@@ -1,0 +1,229 @@
+{
+  "projects": [
+    {
+      "id": "liquid-iv-bodega",
+      "title": "LIQUID IV GLITCH BODEGA NYC",
+      "description": "Immersive retail experience design and set construction",
+      "thumbnail": "images/portfolio/liquid-iv-thumb.jpg",
+      "category": "Retail",
+      "date": "2025-11",
+      "instagramUrl": "https://www.instagram.com/p/DOjkoFMEqys/?img_index=6",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-3.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-2.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-1.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-4.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-8.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-7.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-6.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-5.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-9.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-13.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-11.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-10.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-12.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-14.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-16.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/11/liv_page-15.png"
+      ]
+    },
+    {
+      "id": "elf-musical",
+      "title": "ELF THE MUSICAL",
+      "description": "Theatre set design and technical drawings",
+      "thumbnail": "images/portfolio/elf-thumb.jpg",
+      "category": "Theatre",
+      "date": "2025-04",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_84b2043.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_848a6a8.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_848a669.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_848a5fc.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_848a5ae.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_848a56f.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_848a4f2.png"
+      ]
+    },
+    {
+      "id": "sunset-blvd",
+      "title": "SUNSET BLVD",
+      "description": "Broadway production CAD design and documentation",
+      "thumbnail": "images/portfolio/sunset-thumb.jpg",
+      "category": "Theatre",
+      "date": "2024-11",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4af676c.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4aaec15.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4b9208f.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24db9.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24ec3.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24e94.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24e65.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24e07.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24d6b.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24d5c.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24d3c.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/11/snag_4a24d0d.png"
+      ]
+    },
+    {
+      "id": "hermes-bench",
+      "title": "Hermès ICE CREAM BENCH",
+      "description": "Luxury retail fixture design and fabrication",
+      "thumbnail": "images/portfolio/hermes-thumb.jpg",
+      "category": "Retail",
+      "date": "2024-07",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/snag_a839ad7.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/snag_a84ab3e.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/snag_a84ab0f.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/snag_a72dd71.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/snag_a72ddde.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/snag_a72de5b.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/snag_a72dfd2.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/748.jpg",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/07/752.jpg"
+      ]
+    },
+    {
+      "id": "stereophonic",
+      "title": "STEREOPHONIC",
+      "description": "Theatre production technical drawings",
+      "thumbnail": "images/portfolio/stereophonic-thumb.jpg",
+      "category": "Theatre",
+      "date": "2024-06",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/stereo-pg1.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/stereo-pg2.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/stereo-pg3.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/stereo-pg4.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/stereo-pg5.png"
+      ]
+    },
+    {
+      "id": "moroccanoil",
+      "title": "MOROCCANOIL",
+      "description": "Retail display and experiential design",
+      "thumbnail": "images/portfolio/moroccanoil-thumb.jpg",
+      "category": "Retail",
+      "date": "2024-06",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/mo-pg1.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/mo-pg2.png"
+      ]
+    },
+    {
+      "id": "album-listening",
+      "title": "ALBUM LISTENING PARTY",
+      "description": "Event space design and technical layouts",
+      "thumbnail": "images/portfolio/album-thumb.jpg",
+      "category": "Events",
+      "date": "2024-06",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg1.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg2.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg3.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg4.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg5.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg6.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg7.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2024/06/alp-pg8.png"
+      ]
+    },
+    {
+      "id": "golfers-journal",
+      "title": "THE GOLFERS JOURNAL",
+      "description": "Editorial event space design",
+      "thumbnail": "images/portfolio/golfers-thumb.jpg",
+      "category": "Events",
+      "date": "2023-04",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/2023-04-28_19-35-51.jpg",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_86fc790.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_86fc5bb.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_86fc389.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_86fc166.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_8666cba.png"
+      ]
+    },
+    {
+      "id": "cadillac-iq",
+      "title": "CADILLAC IQ DEBUT SPRING STUDIOS",
+      "description": "Automotive event production design and execution",
+      "thumbnail": "images/portfolio/cadillac-thumb.jpg",
+      "category": "Events",
+      "date": "2025-12",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9KbZZwP1SZk",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/2025-12-06_14-19-16.gif",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727fdf.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727f90.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_157280b9.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_1572802d.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_1572806b.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727b2b.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727b0d.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727b0c.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727a9f.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_157279d4.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727957.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_1572788d.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_1572788c.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727995.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727909.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_157278ca.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727d6e.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727d10.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727d3f.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727c54.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727ca2.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727cd1.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727f42.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727dcb.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727e58.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727ee5.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727e96.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727e0a.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727f13.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_157278ba.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727ba8.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727a31.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727add.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727a70.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727a03.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727c16.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/12/snag_15727be7.png"
+      ]
+    },
+    {
+      "id": "brixton-encinitas",
+      "title": "BRIXTON ENCINITAS",
+      "description": "Retail store design and installation",
+      "thumbnail": "images/portfolio/brixton-thumb.jpg",
+      "category": "Retail",
+      "date": "2021-02",
+      "images": [
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/bxtn_hww_1.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/selection_077.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_85fb6f4.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/selection_078.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/snag_85fb56d.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/selection_075.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/selection_076.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/20210216_160633.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/selection_079.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/selection_074.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/bxtn_hww_4.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/bxtn_hww_3.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/bxtn_hww_2.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/20210216_160658.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/20210216_160648.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/20210216_160636.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/20210216_160614.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/20210216_160503.png",
+        "https://3dnccom.wordpress.com/wp-content/uploads/2025/04/20210216_160351.png"
+      ]
+    }
+  ],
+  "categories": ["All", "Theatre", "Retail", "Events"]
+}
