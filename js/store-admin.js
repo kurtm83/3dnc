@@ -107,11 +107,9 @@ class StoreAdmin {
     setupFileUploads() {
         const imageDropZone = document.getElementById('imageDropZone');
         const imageUpload = document.getElementById('imageUpload');
-        const videoDropZone = document.getElementById('videoDropZone');
-        const videoUpload = document.getElementById('videoUpload');
+        // Video upload functionality removed - now using YouTube URLs
         
         this.uploadedImages = [];
-        this.uploadedVideo = null;
         
         // Image drag-and-drop
         imageDropZone.addEventListener('click', () => imageUpload.click());
@@ -132,26 +130,7 @@ class StoreAdmin {
         });
         
         // Video drag-and-drop
-        videoDropZone.addEventListener('click', () => videoUpload.click());
-        videoDropZone.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            videoDropZone.classList.add('dragover');
-        });
-        videoDropZone.addEventListener('dragleave', () => {
-            videoDropZone.classList.remove('dragover');
-        });
-        videoDropZone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            videoDropZone.classList.remove('dragover');
-            if (e.dataTransfer.files.length > 0) {
-                this.handleVideoFile(e.dataTransfer.files[0]);
-            }
-        });
-        videoUpload.addEventListener('change', (e) => {
-            if (e.target.files.length > 0) {
-                this.handleVideoFile(e.target.files[0]);
-            }
-        });
+        // Video upload event listeners removed - now using YouTube URLs
     }
     
     handleImageFiles(files) {
@@ -185,44 +164,8 @@ class StoreAdmin {
         this.uploadedImages.splice(index, 1);
         this.renderImagePreviews();
     }
-    
-    handleVideoFile(file) {
-        if (!file.type.startsWith('video/')) {
-            alert('Please select a video file');
-            return;
-        }
-        
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            this.uploadedVideo = {
-                name: file.name,
-                data: e.target.result
-            };
-            this.renderVideoPreview();
-        };
-        reader.readAsDataURL(file);
-    }
-    
-    renderVideoPreview() {
-        const preview = document.getElementById('videoPreview');
-        if (this.uploadedVideo) {
-            preview.innerHTML = `
-                <div class="video-preview-item">
-                    <video controls>
-                        <source src="${this.uploadedVideo.data}" type="video/mp4">
-                    </video>
-                    <button type="button" class="remove-video" onclick="admin.removeVideo()">Remove Video</button>
-                </div>
-            `;
-        } else {
-            preview.innerHTML = '';
-        }
-    }
-    
-    removeVideo() {
-        this.uploadedVideo = null;
-        this.renderVideoPreview();
-    }
+
+    // handleVideoFile method removed - now using YouTube URLs directly
 
     switchTab(tabName) {
         // Update menu
@@ -264,9 +207,7 @@ class StoreAdmin {
         
         // Reset uploaded files
         this.uploadedImages = [];
-        this.uploadedVideo = null;
         document.getElementById('imagePreview').innerHTML = '';
-        document.getElementById('videoPreview').innerHTML = '';
         
         if (productId) {
             // Edit mode
@@ -295,13 +236,9 @@ class StoreAdmin {
                 this.renderImagePreviews();
             }
             
-            // Load existing video
-            if (product.video) {
-                this.uploadedVideo = {
-                    name: 'video.mp4',
-                    data: product.video
-                };
-                this.renderVideoPreview();
+            // Load YouTube URL if exists
+            if (product.youtubeUrl) {
+                document.getElementById('productYoutubeUrl').value = product.youtubeUrl;
             }
             
             // Load material options
@@ -352,10 +289,25 @@ class StoreAdmin {
     }
 
     saveProduct() {
-        const formData = new FormData(document.getElementById('productForm'));
-        
-        // Get image URLs from uploaded images
-        const images = this.uploadedImages.length > 0 
+        console.log('saveProduct() called');
+        try {
+            const formData = new FormData(document.getElementById('productForm'));
+            
+            // Validate required fields
+            const name = formData.get('name');
+            const description = formData.get('description');
+            const price = formData.get('price');
+            const category = formData.get('category');
+            
+            console.log('Form data:', { name, description, price, category });
+            
+            if (!name || !description || !price || !category) {
+                alert('Please fill in all required fields: Name, Description, Price, and Category');
+                return;
+            }
+            
+            // Get image URLs from uploaded images
+            const images = this.uploadedImages.length > 0 
             ? this.uploadedImages.map(img => img.data)
             : ['images/store/placeholder.jpg'];
         
@@ -389,7 +341,7 @@ class StoreAdmin {
             color: formData.get('color'),
             dimensions: formData.get('dimensions'),
             images: images,
-            video: this.uploadedVideo ? this.uploadedVideo.data : null,
+            youtubeUrl: formData.get('youtubeUrl') || null,
             stlFile: formData.get('stlFile'),
             inStock: formData.get('inStock') === 'on',
             featured: formData.get('featured') === 'on',
@@ -411,6 +363,10 @@ class StoreAdmin {
         this.closeModal();
         
         alert('⚠️ Important: Download the updated products.json file below and replace the existing file in your /store/ folder to save your changes permanently.');
+        } catch (error) {
+            console.error('Error saving product:', error);
+            alert('Error saving product: ' + error.message + '. Please check the console for details.');
+        }
     }
 
     loadSettingsForm() {

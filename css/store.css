@@ -62,7 +62,9 @@ h3 svg[class^="lucide"] {
 /* Store Controls */
 .store-controls {
     padding: 2rem 0;
-    background: #f8f9fa;
+    background: #4E565B;
+    position: relative;
+    z-index: 1;
 }
 
 .store-toolbar {

@@ -1,12 +1,12 @@
-# 3D-NC.com Pre-Launch Checklist
+# gcode.supply Pre-Launch Checklist
 
 ## 🚨 CRITICAL - Must Complete Before Launch
 
 ### 1. Domain Configuration
-- [ ] **Update CNAME file**: Change from `preview.3d-nc.com` to `3d-nc.com` (or `www.3d-nc.com`)
+- [ ] **Update CNAME file**: Change from `preview.gcode.supply` to `gcode.supply` (or `www.gcode.supply`)
   - File location: `CNAME` in root directory
-  - Current value: `preview.3d-nc.com`
-  - Should be: `3d-nc.com` OR `www.3d-nc.com` (choose one)
+  - Current value: `preview.gcode.supply`
+  - Should be: `gcode.supply` OR `www.gcode.supply` (choose one)
 
 ### 2. GitHub Pages Settings
 - [ ] Verify repository is public (or upgrade to GitHub Pro for private repos)
@@ -16,21 +16,22 @@
 - [ ] Wait for DNS propagation (can take 24-48 hours)
 
 ### 3. DNS Configuration (at your domain registrar)
-If using apex domain (3d-nc.com):
+If using apex domain (gcode.supply):
 - [ ] Add A records pointing to GitHub Pages IPs:
   - `185.199.108.153`
   - `185.199.109.153`
   - `185.199.110.153`
   - `185.199.111.153`
 
-If using www subdomain (www.3d-nc.com):
-- [ ] Add CNAME record: `www` → `yourusername.github.io`
+To make www.gcode.supply also work (recommended):
+- [ ] Add CNAME record: `www` → `kurtm83.github.io`
+- [ ] This will redirect www.gcode.supply to gcode.supply automatically
 
 ## ✅ Already Configured (Should be Good)
 
 ### Content
 - ✅ YouTube API key configured and restricted (AIzaSyDW_j3p_EgbFKevryeBZWrq69WD-a6yFBg)
-- ✅ API restrictions set for: localhost:5500, 127.0.0.1:5500, 3d-nc.com
+- ✅ API restrictions set for: localhost:5500, 127.0.0.1:5500, gcode.supply
 - ✅ Formspree contact form configured (xaqdblee)
 - ✅ Gallery videos configured (6 videos in youtube-videos.txt)
 - ✅ Featured project configured in featured-project.txt
@@ -70,11 +71,11 @@ If using www subdomain (www.3d-nc.com):
 
 1. **Update CNAME**
    - Edit the CNAME file
-   - Change `preview.3d-nc.com` to `3d-nc.com`
+   - Change `preview.gcode.supply` to `gcode.supply`
    - Commit and push to GitHub
 
 2. **Configure DNS**
-   - Log into your domain registrar (where you bought 3d-nc.com)
+   - Log into your domain registrar (where you bought gcode.supply)
    - Add the A records or CNAME record as listed above
    - Save changes
 
@@ -83,12 +84,12 @@ If using www subdomain (www.3d-nc.com):
    - Settings > Pages
    - Select source branch (main/master)
    - Save
-   - Custom domain: `3d-nc.com`
+   - Custom domain: `gcode.supply`
    - Wait for SSL certificate to provision (can take a few minutes)
 
 4. **Test**
    - Wait 10-15 minutes after enabling GitHub Pages
-   - Visit https://3d-nc.com
+   - Visit https://gcode.supply
    - Test all pages and links
    - Test contact form submission
    - Test on mobile device

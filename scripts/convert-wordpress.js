@@ -209,4 +209,4 @@ console.log('\n✓ Created: index.html - Portfolio landing page');
 
 console.log(`\n✅ Success! Converted ${items.length} items to static HTML`);
 console.log(`📁 Files created in: ${portfolioDir}`);
-console.log(`🌐 Access at: https://3d-nc.com/portfolio/`);
+console.log(`🌐 Access at: https://gcode.supply/portfolio/`);

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Code Lines 978-1078 - Multi-Column View</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Courier New', monospace;
+            margin: 20px;
+            background: #2b3e50;
+            color: #e8e8e8;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: #4fc3f7;
+            text-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+        }
+        
+        .gcode-container {
+            column-count: 5;
+            column-gap: 20px;
+            column-rule: 1px solid #445566;
+            font-size: 10px;
+            line-height: 1.5;
+            background: #1e2a35;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gcode-line {
+            break-inside: avoid;
+            padding: 2px 0;
+        }
+        
+        .line-num {
+            color: #5a6d7f;
+            margin-right: 8px;
+            display: inline-block;
+            width: 40px;
+            font-weight: bold;
+        }
+        
+        .gcode-cmd {
+            color: #81c784;
+            font-weight: bold;
+        }
+        
+        .g-command {
+            color: #4fc3f7;
+            font-weight: bold;
+        }
+        
+        .x-coord {
+            color: #ff8a65;
+        }
+        
+        .y-coord {
+            color: #ba68c8;
+        }
+        
+        .z-coord {
+            color: #ffd54f;
+        }
+        
+        .e-value {
+            color: #4db6ac;
+        }
+        
+        @media print {
+            body {
+                margin: 0.5in;
+                background: #2b3e50;
+            }
+            .gcode-container {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Puck Light Lamp Shade - G-Code Lines 978-1078</h1>
+    
+    <div class="gcode-container">
+        <div class="gcode-line"><span class="line-num">978:</span><span class="g-command">G1</span> <span class="x-coord">X58.454</span> <span class="y-coord">Y56.65</span> <span class="e-value">E.08308</span></div>
+        <div class="gcode-line"><span class="line-num">979:</span><span class="g-command">G1</span> <span class="x-coord">X60.079</span> <span class="y-coord">Y55.101</span> <span class="e-value">E.14777</span></div>
+        <div class="gcode-line"><span class="line-num">980:</span><span class="g-command">G1</span> <span class="x-coord">X62.819</span> <span class="y-coord">Y52.71</span> <span class="e-value">E.23942</span></div>
+        <div class="gcode-line"><span class="line-num">981:</span><span class="g-command">G1</span> <span class="x-coord">X65.692</span> <span class="y-coord">Y50.477</span> <span class="e-value">E.23955</span></div>
+        <div class="gcode-line"><span class="line-num">982:</span><span class="g-command">G1</span> <span class="x-coord">X68.798</span> <span class="y-coord">Y48.312</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">983:</span><span class="g-command">G1</span> <span class="x-coord">X69.852</span> <span class="y-coord">Y47.619</span> <span class="e-value">E.08307</span></div>
+        <div class="gcode-line"><span class="line-num">984:</span><span class="g-command">G1</span> <span class="x-coord">X71.901</span> <span class="y-coord">Y46.324</span> <span class="e-value">E.15956</span></div>
+        <div class="gcode-line"><span class="line-num">985:</span><span class="g-command">G1</span> <span class="x-coord">X74.902</span> <span class="y-coord">Y44.606</span> <span class="e-value">E.22763</span></div>
+        <div class="gcode-line"><span class="line-num">986:</span><span class="g-command">G1</span> <span class="x-coord">X78.156</span> <span class="y-coord">Y42.977</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">987:</span><span class="g-command">G1</span> <span class="x-coord">X81.624</span> <span class="y-coord">Y41.459</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">988:</span><span class="g-command">G1</span> <span class="x-coord">X82.794</span> <span class="y-coord">Y40.985</span> <span class="e-value">E.08309</span></div>
+        <div class="gcode-line"><span class="line-num">989:</span><span class="g-command">G1</span> <span class="x-coord">X84.888</span> <span class="y-coord">Y40.176</span> <span class="e-value">E.14777</span></div>
+        <div class="gcode-line"><span class="line-num">990:</span><span class="g-command">G1</span> <span class="x-coord">X88.334</span> <span class="y-coord">Y39.015</span> <span class="e-value">E.23941</span></div>
+        <div class="gcode-line"><span class="line-num">991:</span><span class="g-command">G1</span> <span class="x-coord">X91.843</span> <span class="y-coord">Y38.052</span> <span class="e-value">E.23956</span></div>
+        <div class="gcode-line"><span class="line-num">992:</span><span class="g-command">G1</span> <span class="x-coord">X95.541</span> <span class="y-coord">Y37.24</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">993:</span><span class="g-command">G1</span> <span class="x-coord">X96.781</span> <span class="y-coord">Y37.004</span> <span class="e-value">E.08307</span></div>
+        <div class="gcode-line"><span class="line-num">994:</span><span class="g-command">G1</span> <span class="x-coord">X98.992</span> <span class="y-coord">Y36.618</span> <span class="e-value">E.14778</span></div>
+        <div class="gcode-line"><span class="line-num">995:</span><span class="g-command">G1</span> <span class="x-coord">X102.599</span> <span class="y-coord">Y36.152</span> <span class="e-value">E.23942</span></div>
+        <div class="gcode-line"><span class="line-num">996:</span><span class="g-command">G1</span> <span class="x-coord">X106.228</span> <span class="y-coord">Y35.892</span> <span class="e-value">E.23956</span></div>
+        <div class="gcode-line"><span class="line-num">997:</span><span class="g-command">G1</span> <span class="x-coord">X109.874</span> <span class="y-coord">Y35.819</span> <span class="e-value">E.24005</span></div>
+        <div class="gcode-line"><span class="line-num">998:</span><span class="g-command">G1</span> <span class="x-coord">X111.201</span> <span class="y-coord">Y35.826</span> <span class="e-value">E.0874</span></div>
+        <div class="gcode-line"><span class="line-num">999:</span><span class="g-command">G1</span> <span class="x-coord">X113.698</span> <span class="y-coord">Y35.889</span> <span class="e-value">E.16445</span></div>
+        <div class="gcode-line"><span class="line-num">1000:</span><span class="g-command">G1</span> <span class="x-coord">X117.148</span> <span class="y-coord">Y36.127</span> <span class="e-value">E.22763</span></div>
+        <div class="gcode-line"><span class="line-num">1001:</span><span class="g-command">G1</span> <span class="x-coord">X120.759</span> <span class="y-coord">Y36.58</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1002:</span><span class="g-command">G1</span> <span class="x-coord">X124.486</span> <span class="y-coord">Y37.246</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1003:</span><span class="g-command">G1</span> <span class="x-coord">X125.722</span> <span class="y-coord">Y37.501</span> <span class="e-value">E.08307</span></div>
+        <div class="gcode-line"><span class="line-num">1004:</span><span class="g-command">G1</span> <span class="x-coord">X127.912</span> <span class="y-coord">Y37.992</span> <span class="e-value">E.14778</span></div>
+        <div class="gcode-line"><span class="line-num">1005:</span><span class="g-command">G1</span> <span class="x-coord">X131.422</span> <span class="y-coord">Y38.941</span> <span class="e-value">E.23942</span></div>
+        <div class="gcode-line"><span class="line-num">1006:</span><span class="g-command">G1</span> <span class="x-coord">X134.875</span> <span class="y-coord">Y40.09</span> <span class="e-value">E.23956</span></div>
+        <div class="gcode-line"><span class="line-num">1007:</span><span class="g-command">G1</span> <span class="x-coord">X138.401</span> <span class="y-coord">Y41.47</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1008:</span><span class="g-command">G1</span> <span class="x-coord">X139.563</span> <span class="y-coord">Y41.961</span> <span class="e-value">E.08307</span></div>
+        <div class="gcode-line"><span class="line-num">1009:</span><span class="g-command">G1</span> <span class="x-coord">X141.616</span> <span class="y-coord">Y42.87</span> <span class="e-value">E.14778</span></div>
+        <div class="gcode-line"><span class="line-num">1010:</span><span class="g-command">G1</span> <span class="x-coord">X144.874</span> <span class="y-coord">Y44.486</span> <span class="e-value">E.23942</span></div>
+        <div class="gcode-line"><span class="line-num">1011:</span><span class="g-command">G1</span> <span class="x-coord">X148.036</span> <span class="y-coord">Y46.286</span> <span class="e-value">E.23956</span></div>
+        <div class="gcode-line"><span class="line-num">1012:</span><span class="g-command">G1</span> <span class="x-coord">X151.225</span> <span class="y-coord">Y48.327</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1013:</span><span class="g-command">G1</span> <span class="x-coord">X152.269</span> <span class="y-coord">Y49.036</span> <span class="e-value">E.08306</span></div>
+        <div class="gcode-line"><span class="line-num">1014:</span><span class="g-command">G1</span> <span class="x-coord">X154.249</span> <span class="y-coord">Y50.433</span> <span class="e-value">E.15957</span></div>
+        <div class="gcode-line"><span class="line-num">1015:</span><span class="g-command">G1</span> <span class="x-coord">X156.985</span> <span class="y-coord">Y52.548</span> <span class="e-value">E.22764</span></div>
+        <div class="gcode-line"><span class="line-num">1016:</span><span class="g-command">G1</span> <span class="x-coord">X159.735</span> <span class="y-coord">Y54.931</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1017:</span><span class="g-command">G1</span> <span class="x-coord">X162.465</span> <span class="y-coord">Y57.555</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1018:</span><span class="g-command">G1</span> <span class="x-coord">X163.35</span> <span class="y-coord">Y58.454</span> <span class="e-value">E.08307</span></div>
+        <div class="gcode-line"><span class="line-num">1019:</span><span class="g-command">G1</span> <span class="x-coord">X164.899</span> <span class="y-coord">Y60.079</span> <span class="e-value">E.14778</span></div>
+        <div class="gcode-line"><span class="line-num">1020:</span><span class="g-command">G1</span> <span class="x-coord">X167.29</span> <span class="y-coord">Y62.819</span> <span class="e-value">E.23942</span></div>
+        <div class="gcode-line"><span class="line-num">1021:</span><span class="g-command">G1</span> <span class="x-coord">X169.523</span> <span class="y-coord">Y65.692</span> <span class="e-value">E.23956</span></div>
+        <div class="gcode-line"><span class="line-num">1022:</span><span class="g-command">G1</span> <span class="x-coord">X171.688</span> <span class="y-coord">Y68.798</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1023:</span><span class="g-command">G1</span> <span class="x-coord">X172.381</span> <span class="y-coord">Y69.852</span> <span class="e-value">E.08305</span></div>
+        <div class="gcode-line"><span class="line-num">1024:</span><span class="g-command">G1</span> <span class="x-coord">X173.676</span> <span class="y-coord">Y71.901</span> <span class="e-value">E.15957</span></div>
+        <div class="gcode-line"><span class="line-num">1025:</span><span class="g-command">G1</span> <span class="x-coord">X175.394</span> <span class="y-coord">Y74.902</span> <span class="e-value">E.22763</span></div>
+        <div class="gcode-line"><span class="line-num">1026:</span><span class="g-command">G1</span> <span class="x-coord">X177.023</span> <span class="y-coord">Y78.156</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1027:</span><span class="g-command">G1</span> <span class="x-coord">X178.541</span> <span class="y-coord">Y81.624</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1028:</span><span class="g-command">G1</span> <span class="x-coord">X179.015</span> <span class="y-coord">Y82.794</span> <span class="e-value">E.08307</span></div>
+        <div class="gcode-line"><span class="line-num">1029:</span><span class="g-command">G1</span> <span class="x-coord">X179.885</span> <span class="y-coord">Y85.056</span> <span class="e-value">E.15957</span></div>
+        <div class="gcode-line"><span class="line-num">1030:</span><span class="g-command">G1</span> <span class="x-coord">X180.985</span> <span class="y-coord">Y88.334</span> <span class="e-value">E.22763</span></div>
+        <div class="gcode-line"><span class="line-num">1031:</span><span class="g-command">G1</span> <span class="x-coord">X181.948</span> <span class="y-coord">Y91.843</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1032:</span><span class="g-command">G1</span> <span class="x-coord">X182.76</span> <span class="y-coord">Y95.541</span> <span class="e-value">E.24928</span></div>
+        <div class="gcode-line"><span class="line-num">1033:</span><span class="g-command">G1</span> <span class="x-coord">X182.996</span> <span class="y-coord">Y96.781</span> <span class="e-value">E.08307</span></div>
+        <div class="gcode-line"><span class="line-num">1034:</span><span class="g-command">G1</span> <span class="x-coord">X183.409</span> <span class="y-coord">Y99.171</span> <span class="e-value">E.15966</span></div>
+        <div class="gcode-line"><span class="line-num">1035:</span><span class="g-command">G1</span> <span class="x-coord">X183.848</span> <span class="y-coord">Y102.604</span> <span class="e-value">E.22791</span></div>
+        <div class="gcode-line"><span class="line-num">1036:</span><span class="g-command">G1</span> <span class="x-coord">X184.108</span> <span class="y-coord">Y106.245</span> <span class="e-value">E.24028</span></div>
+        <div class="gcode-line"><span class="line-num">1037:</span><span class="g-command">G1</span> <span class="x-coord">X184.183</span> <span class="y-coord">Y110.037</span> <span class="e-value">E.2497</span></div>
+        <div class="gcode-line"><span class="line-num">1038:</span><span class="g-command">G1</span> <span class="x-coord">X184.173</span> <span class="y-coord">Y111.295</span> <span class="e-value">E.08283</span></div>
+        <div class="gcode-line"><span class="line-num">1039:</span><span class="g-command">G1</span> <span class="x-coord">X184.12</span> <span class="y-coord">Y113.536</span> <span class="e-value">E.14758</span></div>
+        <div class="gcode-line"><span class="line-num">1040:</span><span class="g-command">G1</span> <span class="x-coord">X183.873</span> <span class="y-coord">Y117.154</span> <span class="e-value">E.23875</span></div>
+        <div class="gcode-line"><span class="line-num">1041:</span><span class="g-command">G1</span> <span class="x-coord">X183.42</span> <span class="y-coord">Y120.759</span> <span class="e-value">E.23922</span></div>
+        <div class="gcode-line"><span class="line-num">1042:</span><span class="g-command">G1</span> <span class="x-coord">X182.754</span> <span class="y-coord">Y124.486</span> <span class="e-value">E.2492</span></div>
+        <div class="gcode-line"><span class="line-num">1043:</span><span class="g-command">G1</span> <span class="x-coord">X182.499</span> <span class="y-coord">Y125.721</span> <span class="e-value">E.08305</span></div>
+        <div class="gcode-line"><span class="line-num">1044:</span><span class="g-command">G1</span> <span class="x-coord">X181.966</span> <span class="y-coord">Y128.086</span> <span class="e-value">E.15958</span></div>
+        <div class="gcode-line"><span class="line-num">1045:</span><span class="g-command">G1</span> <span class="x-coord">X181.059</span> <span class="y-coord">Y131.422</span> <span class="e-value">E.22764</span></div>
+        <div class="gcode-line"><span class="line-num">1046:</span><span class="g-command">G1</span> <span class="x-coord">X179.91</span> <span class="y-coord">Y134.875</span> <span class="e-value">E.23958</span></div>
+        <div class="gcode-line"><span class="line-num">1047:</span><span class="g-command">G1</span> <span class="x-coord">X178.53</span> <span class="y-coord">Y138.401</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1048:</span><span class="g-command">G1</span> <span class="x-coord">X178.039</span> <span class="y-coord">Y139.563</span> <span class="e-value">E.08305</span></div>
+        <div class="gcode-line"><span class="line-num">1049:</span><span class="g-command">G1</span> <span class="x-coord">X177.055</span> <span class="y-coord">Y141.778</span> <span class="e-value">E.15957</span></div>
+        <div class="gcode-line"><span class="line-num">1050:</span><span class="g-command">G1</span> <span class="x-coord">X175.514</span> <span class="y-coord">Y144.873</span> <span class="e-value">E.22764</span></div>
+        <div class="gcode-line"><span class="line-num">1051:</span><span class="g-command">G1</span> <span class="x-coord">X173.714</span> <span class="y-coord">Y148.036</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1052:</span><span class="g-command">G1</span> <span class="x-coord">X171.673</span> <span class="y-coord">Y151.225</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1053:</span><span class="g-command">G1</span> <span class="x-coord">X170.964</span> <span class="y-coord">Y152.269</span> <span class="e-value">E.08305</span></div>
+        <div class="gcode-line"><span class="line-num">1054:</span><span class="g-command">G1</span> <span class="x-coord">X169.567</span> <span class="y-coord">Y154.249</span> <span class="e-value">E.15958</span></div>
+        <div class="gcode-line"><span class="line-num">1055:</span><span class="g-command">G1</span> <span class="x-coord">X167.452</span> <span class="y-coord">Y156.985</span> <span class="e-value">E.22763</span></div>
+        <div class="gcode-line"><span class="line-num">1056:</span><span class="g-command">G1</span> <span class="x-coord">X165.069</span> <span class="y-coord">Y159.735</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1057:</span><span class="g-command">G1</span> <span class="x-coord">X162.445</span> <span class="y-coord">Y162.465</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1058:</span><span class="g-command">G1</span> <span class="x-coord">X161.546</span> <span class="y-coord">Y163.35</span> <span class="e-value">E.08305</span></div>
+        <div class="gcode-line"><span class="line-num">1059:</span><span class="g-command">G1</span> <span class="x-coord">X159.79</span> <span class="y-coord">Y165.02</span> <span class="e-value">E.15958</span></div>
+        <div class="gcode-line"><span class="line-num">1060:</span><span class="g-command">G1</span> <span class="x-coord">X157.182</span> <span class="y-coord">Y167.29</span> <span class="e-value">E.22764</span></div>
+        <div class="gcode-line"><span class="line-num">1061:</span><span class="g-command">G1</span> <span class="x-coord">X154.308</span> <span class="y-coord">Y169.523</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1062:</span><span class="g-command">G1</span> <span class="x-coord">X151.202</span> <span class="y-coord">Y171.688</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1063:</span><span class="g-command">G1</span> <span class="x-coord">X150.148</span> <span class="y-coord">Y172.381</span> <span class="e-value">E.08306</span></div>
+        <div class="gcode-line"><span class="line-num">1064:</span><span class="g-command">G1</span> <span class="x-coord">X148.099</span> <span class="y-coord">Y173.676</span> <span class="e-value">E.15957</span></div>
+        <div class="gcode-line"><span class="line-num">1065:</span><span class="g-command">G1</span> <span class="x-coord">X145.098</span> <span class="y-coord">Y175.394</span> <span class="e-value">E.22763</span></div>
+        <div class="gcode-line"><span class="line-num">1066:</span><span class="g-command">G1</span> <span class="x-coord">X141.845</span> <span class="y-coord">Y177.023</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1067:</span><span class="g-command">G1</span> <span class="x-coord">X138.376</span> <span class="y-coord">Y178.541</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1068:</span><span class="g-command">G1</span> <span class="x-coord">X137.206</span> <span class="y-coord">Y179.015</span> <span class="e-value">E.08306</span></div>
+        <div class="gcode-line"><span class="line-num">1069:</span><span class="g-command">G1</span> <span class="x-coord">X134.944</span> <span class="y-coord">Y179.885</span> <span class="e-value">E.15957</span></div>
+        <div class="gcode-line"><span class="line-num">1070:</span><span class="g-command">G1</span> <span class="x-coord">X131.666</span> <span class="y-coord">Y180.985</span> <span class="e-value">E.22763</span></div>
+        <div class="gcode-line"><span class="line-num">1071:</span><span class="g-command">G1</span> <span class="x-coord">X128.157</span> <span class="y-coord">Y181.948</span> <span class="e-value">E.23957</span></div>
+        <div class="gcode-line"><span class="line-num">1072:</span><span class="g-command">G1</span> <span class="x-coord">X124.459</span> <span class="y-coord">Y182.76</span> <span class="e-value">E.24927</span></div>
+        <div class="gcode-line"><span class="line-num">1073:</span><span class="g-command">G1</span> <span class="x-coord">X123.22</span> <span class="y-coord">Y182.996</span> <span class="e-value">E.08305</span></div>
+        <div class="gcode-line"><span class="line-num">1074:</span><span class="g-command">G1</span> <span class="x-coord">X120.831</span> <span class="y-coord">Y183.409</span> <span class="e-value">E.15957</span></div>
+        <div class="gcode-line"><span class="line-num">1075:</span><span class="g-command">G1</span> <span class="x-coord">X117.401</span> <span class="y-coord">Y183.848</span> <span class="e-value">E.22764</span></div>
+        <div class="gcode-line"><span class="line-num">1076:</span><span class="g-command">G1</span> <span class="x-coord">X113.772</span> <span class="y-coord">Y184.108</span> <span class="e-value">E.23957</span></div>
+    </div>
+</body>
+</html>
