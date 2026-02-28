@@ -66,14 +66,14 @@ function generateHTML(item) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${item.title} - 3D-NC</title>
+    <title>${item.title} - GCode Supply</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="../index.html" class="logo">3D-NC</a>
+            <a href="../index.html" class="logo">GCode Supply</a>
             <ul class="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../services.html">Services</a></li>
@@ -108,7 +108,7 @@ function generateHTML(item) {
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; ${new Date().getFullYear()} 3D-NC. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} GCode Supply. All rights reserved.</p>
         </div>
     </footer>
 
@@ -135,14 +135,14 @@ function generateIndexHTML(items) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - 3D-NC</title>
+    <title>Portfolio - GCode Supply</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="../index.html" class="logo">3D-NC</a>
+            <a href="../index.html" class="logo">GCode Supply</a>
             <ul class="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../services.html">Services</a></li>
@@ -176,7 +176,7 @@ function generateIndexHTML(items) {
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; ${new Date().getFullYear()} 3D-NC. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} GCode Supply. All rights reserved.</p>
         </div>
     </footer>
 

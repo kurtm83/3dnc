@@ -1,4 +1,4 @@
-# 3DNC Store Setup Guide
+# GCode Supply Store Setup Guide
 
 ## Overview
 This is a scalable ecommerce store built to start with Craftcloud3D manual fulfillment and easily upgrade to automated fulfillment with Shapeways or Slant3D.

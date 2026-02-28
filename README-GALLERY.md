@@ -1,4 +1,4 @@
-# 3DNC Website - Gallery Management
+# GCode Supply Website - Gallery Management
 
 ## Quick Start
 

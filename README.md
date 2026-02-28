@@ -1,4 +1,4 @@
-# 3DNC - 3D Printing Services
+# GCode Supply - 3D Printing Services
 
 Professional 3D printing services website.
 
