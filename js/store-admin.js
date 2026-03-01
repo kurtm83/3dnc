@@ -420,7 +420,7 @@ class StoreAdmin {
 
     saveData() {
         // In a real application, this would save to a server
-        // For now, we'll use localStorage and show instructions
+        // For now, I'll use localStorage and show instructions
         localStorage.setItem('3dnc-store-data', JSON.stringify(this.data));
         
         console.log('Store data updated. To persist changes, download and replace store/products.json:');

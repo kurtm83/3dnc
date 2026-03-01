@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube API Test</title>
+    <style>
+        body { font-family: monospace; padding: 20px; }
+        .result { margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
+        .error { background-color: #ffcccc; }
+        .success { background-color: #ccffcc; }
+    </style>
+</head>
+<body>
+    <h1>YouTube API Diagnostic Test</h1>
+    <div id="results"></div>
+
+    <script>
+        const YOUTUBE_API_KEY = 'AIzaSyDW_j3p_EgbFKevryeBZWrq69WD-a6yFBg';
+        const videoIds = ['tR23ThTc6WM', 'KS9b1L6CTFg', '4UT1HEY-qXY', '4Y-x-DmvVns', 'XLjJunm0Nt8', 'EPgQzdHduNQ', 'M0ZA89ugxf0'];
+        
+        async function testAPI() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<p>Testing YouTube API...</p>';
+            
+            try {
+                const response = await fetch(
+                    `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoIds.join(',')}&key=${YOUTUBE_API_KEY}`
+                );
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    resultsDiv.innerHTML = `<div class="result error">
+                        <strong>API Error:</strong> ${data.error.message}
+                        <pre>${JSON.stringify(data.error, null, 2)}</pre>
+                    </div>`;
+                    return;
+                }
+                
+                let html = `<div class="result success">
+                    <strong>✓ API Key is valid!</strong>
+                    <p>Videos found: ${data.items.length}/${videoIds.length}</p>
+                    <pre>`;
+                
+                data.items.forEach(video => {
+                    html += `${video.id}: "${video.snippet.title}"\n`;
+                });
+                
+                html += `</pre></div>`;
+                resultsDiv.innerHTML = html;
+                
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="result error">
+                    <strong>Network/CORS Error:</strong>
+                    <pre>${error.message}\n\n${error.stack}</pre>
+                </div>`;
+            }
+        }
+        
+        testAPI();
+    </script>
+</body>
+</html>

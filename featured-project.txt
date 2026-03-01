@@ -4,7 +4,7 @@
 VIDEO_ID=tR23ThTc6WM
 TITLE=Custom Drawer Pull Reproduction
 DATE=January 2026
-DESCRIPTION=Client needed to replace two missing metal drawer pulls to complete a matching set for their cabinet. Using precision 3D modeling and printing, we successfully reproduced the intricate design, creating perfect matches to the original metal hardware.
+DESCRIPTION=Client needed to replace two missing metal drawer pulls to complete a matching set for their cabinet. Using precision 3D modeling and printing, I successfully reproduced the intricate design, creating perfect matches to the original metal hardware.
 
 # Project images (placed in images/ folder)
 IMAGE_1=drawer pull original.jpeg

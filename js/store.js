@@ -575,7 +575,7 @@ class Store {
         };
         
         // In production, this would send to a server
-        // For now, we'll show success and log to console
+        // For now, I'll show success and log to console
         console.log('Order submitted:', orderData);
         
         // Show confirmation modal with appropriate message
@@ -585,7 +585,7 @@ class Store {
         if (paymentMethod === 'paypal') {
             confirmMessage.innerHTML = `
                 <p><strong><i data-lucide="check-circle"></i> Payment Successful!</strong></p>
-                <p>Thank you! Your payment has been processed and we've received your order.</p>
+                <p>Thank you! Your payment has been processed and I've received your order.</p>
                 <p>You'll receive a confirmation email shortly with:</p>
                 <ul>
                     <li>Order confirmation and receipt</li>
@@ -596,7 +596,7 @@ class Store {
             `;
         } else {
             confirmMessage.innerHTML = `
-                <p>Thank you for your order! We've received your request.</p>
+                <p>Thank you for your order! I've received your request.</p>
                 <p>You'll receive an email shortly with:</p>
                 <ul>
                     <li>Order confirmation and details</li>
